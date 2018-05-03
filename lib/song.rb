@@ -34,9 +34,14 @@ class Song
   def self.find_by_name(name)
     match = ""
     self.all.each do |song|
-      match = song.collect {name}
+      song.name == name
     end
     match
+  end
+
+  def self.find_by_name(name)
+    found = self.all.collect {|match| match == name}
+    found
   end
 
   #def self.find_or_create_by_name(name)
