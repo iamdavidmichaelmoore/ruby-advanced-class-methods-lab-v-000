@@ -44,7 +44,7 @@ class Song
   #  elsif !@@all.include?(name)
   #    self.create_by_name(name)
   #  end
-  end
+  #end
 
 
 end
