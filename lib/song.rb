@@ -1,3 +1,5 @@
+include 'Pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -35,6 +37,7 @@ class Song
       puts song = @@all[song_index]
     elsif !all.include?(name)
       puts "name not in @@all"
+      binding.pry
     end
   end
 
