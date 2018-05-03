@@ -29,6 +29,12 @@ class Song
     song
   end
 
+  def self.find_by_name(name)
+    if self.class.all.include?(name)
+      self.classall.collect. {name]}
+    end
+  end
+
   def self.find_or_create_by_name(name)
     if self.class.all.include?(name)
       self.class.all.collect {name}
