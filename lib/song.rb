@@ -32,14 +32,15 @@ class Song
   def self.find_by_name(name)
     song = ""
     if @@all.include?(name)
-    song = @@all.detect {name}
+    song_index = @@all.index(name)
+    song = @@all[song_index]
     end
     song
   end
 
   def self.find_or_create_by_name(name)
     if @@all.include?(name)
-      @@all.detect {name}
+      @@all.index(name)
     elsif !@@all.include?(name)
       self.create_by_name(name)
     end
