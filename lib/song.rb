@@ -38,12 +38,12 @@ class Song
     song
   end
 
-  def self.find_or_create_by_name(name)
-    if @@all.include?(name)
-      @@all.index(name)
-    elsif !@@all.include?(name)
-      self.create_by_name(name)
-    end
+  #def self.find_or_create_by_name(name)
+  #  if @@all.include?(name)
+  #    @@all.index(name)
+  #  elsif !@@all.include?(name)
+  #    self.create_by_name(name)
+  #  end
   end
 
 
