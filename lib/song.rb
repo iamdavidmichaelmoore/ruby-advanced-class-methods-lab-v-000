@@ -40,6 +40,7 @@ class Song
     find = self.find_by_name(name)
     create = self.create_by_name(name)
     result = find ||= create ? find : create
+    result
   end
 
 
