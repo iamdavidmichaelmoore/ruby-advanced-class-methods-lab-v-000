@@ -33,7 +33,7 @@ class Song
 
   def self.find_by_name(name)
     self.all.each do |song|
-      song = collect {name}
+      song = song.collect {name}
     end
     song
   end
