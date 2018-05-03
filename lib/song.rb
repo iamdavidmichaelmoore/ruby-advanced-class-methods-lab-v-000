@@ -37,9 +37,7 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    find = self.find_by_name(name)
-    create = self.create_by_name(name)
-    result = find ||= create ? find : create
+    result = name != "" ? self.find_by_name(name) : self.create_by_name(name)
     result
   end
 
