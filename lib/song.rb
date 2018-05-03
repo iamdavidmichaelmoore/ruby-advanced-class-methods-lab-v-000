@@ -54,7 +54,7 @@ class Song
   def self.new_from_filename(mp3_filename)
     artist_title_ary = mp3_filename.split("-")
     artist = artist_title_ary[0].strip
-    song_title = artist_title_ary[1]strip.split(".")[0]
+    song_title = artist_title_ary[1].strip.split(".")[0]
     instance = self.find_or_create_by_name(song_title)
     instance.artist_name = artist
     instance
