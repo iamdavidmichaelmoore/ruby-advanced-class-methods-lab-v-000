@@ -32,8 +32,8 @@ class Song
   def self.find_by_name(name)
     if @@all.include?(name)
     song = @@all.collect {name}
-    end
     song
+    end
   end
 
   def self.find_or_create_by_name(name)
