@@ -32,7 +32,7 @@ class Song
   def self.find_by_name(name)
     if @@all.include?(name)
     song_index = @@all.index(name)
-    song = @@all[song_index]
+    puts song = @@all[song_index]
     end
   end
 
