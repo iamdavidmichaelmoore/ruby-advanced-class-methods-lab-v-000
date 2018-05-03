@@ -40,7 +40,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    found = self.all.collect {|match| match.name == name}
+    found = self.all.find {|match| match.name == name}
     found
   end
 
