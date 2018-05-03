@@ -46,5 +46,12 @@ class Song
     find_create
   end
 
+  def self.alphabetical
+    sorted = self.all.sort_by {|title| title.name}
+    sorted
+  end
+
+  
+
 
 end
