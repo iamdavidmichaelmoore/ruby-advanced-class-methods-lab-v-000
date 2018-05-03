@@ -32,10 +32,11 @@ class Song
   end
 
   def self.find_by_name(name)
+    match = ""
     self.all.each do |song|
-      song = song.collect {name}
+      match = song.collect {name}
     end
-    song
+    match
   end
 
   #def self.find_or_create_by_name(name)
