@@ -30,15 +30,15 @@ class Song
   end
 
   def self.find_by_name(name)
-    if self.class.all.include?(name)
-      self.class.all.collect {name}
+    if @@all.include?(name)
+      @@all.collect {name}
     end
   end
 
   def self.find_or_create_by_name(name)
-    if self.class.all.include?(name)
-      self.class.all.collect {name}
-    elsif !self.class.all.include?(name)
+    if @@all.include?(name)
+      @@all.collect {name}
+    elsif !@@all.include?(name)
       self.create_by_name(name)
     end
   end
