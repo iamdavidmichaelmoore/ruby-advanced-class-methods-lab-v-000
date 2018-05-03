@@ -52,7 +52,8 @@ class Song
   end
 
   def self.new_from_filename(mp3_filename)
-    artist_title_ary = mp3_filename.split("-").chomp
+    puts artist_title_ary = mp3_filename.split("-").strip
+  end
 
 
 end
