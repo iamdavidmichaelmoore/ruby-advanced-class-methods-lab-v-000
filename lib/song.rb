@@ -51,7 +51,8 @@ class Song
     sorted
   end
 
-
+  def self.new_from_filename(mp3_filename)
+    artist_title_ary = mp3_filename.split("-").chomp
 
 
 end
