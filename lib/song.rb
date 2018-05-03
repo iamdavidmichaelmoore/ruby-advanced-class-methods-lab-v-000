@@ -60,5 +60,17 @@ class Song
     instance
   end
 
+  def self.create_from_filename(mp3_filename)
+    artist_title_ary = mp3_filename.split("-")
+    artist = artist_title_ary[0].strip
+    song_title = artist_title_ary[1].strip.split(".")[0]
+  end
+
+  def self.create_from_filename(mp3_filename)
+    file = self.create_from_filename(mp3_filename)
+    file.save
+    file 
+  end
+
 
 end
