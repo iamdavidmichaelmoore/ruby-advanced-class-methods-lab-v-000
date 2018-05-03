@@ -31,11 +31,10 @@ class Song
 
   def self.find_by_name(name)
     if @@all.include?(name)
-    puts song_index = @@all.index(name)
-    puts song = @@all[song_index]
-  elsif !all.include?(name)
-    puts "name not in @@all"
-    
+      puts song_index = @@all.index(name)
+      puts song = @@all[song_index]
+    elsif !all.include?(name)
+      puts "name not in @@all"
     end
   end
 
